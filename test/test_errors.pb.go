@@ -4,7 +4,7 @@ package test
 
 import (
 	fmt "fmt"
-	gerr "github.com/driftingboy/protoc-gen-go-errors/gerr"
+	gerr "github.com/xworks/protoc-gen-go-errors/gerr"
 )
 
 // This is a compile-time assertion to ensure that this generated file
