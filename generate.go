@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/driftingboy/protoc-gen-go-errors/gerr"
+	"github.com/xworks/protoc-gen-go-errors/gerr"
 	"google.golang.org/protobuf/compiler/protogen"
 	"google.golang.org/protobuf/proto"
 )
 
 const (
-	errorsPackage = protogen.GoImportPath("github.com/driftingboy/protoc-gen-go-errors/gerr") // "github.com/driftingboy/protoc-gen-go-errors/errors"
+	errorsPackage = protogen.GoImportPath("github.com/xworks/protoc-gen-go-errors/gerr") // "github.com/xworks/protoc-gen-go-errors/errors"
 	fmtPackage    = protogen.GoImportPath("fmt")
 )
 

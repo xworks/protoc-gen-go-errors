@@ -2,10 +2,10 @@ syntax = "proto3";
 
 package errors;
 
-option go_package = "github.com/driftingboy/protoc-gen-go-errors/gerr;gerr";
+option go_package = "github.com/xworks/protoc-gen-go-errors/gerr;gerr";
 option java_multiple_files = true;
-option java_package = "com.github.driftingboy.gerr";
-option objc_class_prefix = "DriftingboyGerr";
+option java_package = "com.github.xworks.gerr";
+option objc_class_prefix = "XWorksGerr";
 
 import "google/protobuf/descriptor.proto";
 
@@ -21,11 +21,11 @@ message Error {
 };
 
 extend google.protobuf.EnumOptions {
-  Settings settings = 1108;
+  Settings settings = 1208;
 }
 
 extend google.protobuf.EnumValueOptions {
-  StatusCode code = 1109;
+  StatusCode code = 1209;
 }
 
 message Settings {

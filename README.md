@@ -53,6 +53,17 @@ func BizErrorCode(err error) int {
 
 ```
 
+## 编译及插件使用注意事项
+protoc命令行使用插件时，参数名称和插件应用程序的名称保持对应关系。例如：
+>   protoc -I . -I ..\gerr --go_out=paths=source_relative:. --go-errors_out=paths=source_relative:. test.proto
+
+--go-errors_out 参数，对应的插件应用程序名称应该是: protoc-gen-go-errors
+
+因此，在go build生成插件应用程序时，需要指定应用程序的名称为：
+> go build -o protoc-gen-go-errors
+
+同时，插件应用应位于GOPATH/bin目录，以使protoc可以找到对应的应用程序
+
 ## 使用案例
 
 1. build the binary util
